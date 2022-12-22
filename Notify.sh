@@ -9,5 +9,5 @@ while true; do
   #awk '/..longitude../{print substr($0, index($0,"longitude") - 0, 30);}' newtest.txt >> shashi.txt
   awk -F, 'NF > 1 { $1 = $2 } { print $1 }' newtest.txt > shashi.txt
   awk -F, 'NF > 1 { $1 = $3 } { print $1 }' newtest.txt >> shashi.txt
-  < shashi.txt mail -s "MQTTS MAIL STATUS" "shashi@mcci.com, athisankar@mcci.com"
+  < shashi.txt mail -s "MQTTS MAIL STATUS" "shashi@mcci.com"
 done
