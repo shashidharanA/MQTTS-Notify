@@ -6,14 +6,6 @@
 # Function:
 #     gateway status will send mail when the Message recived in related Mqqts Topic   
 #
-# Copyright and License:
-#     This file copyright (c) 2022 by
-#
-#         MCCI Corporation
-#         3520 Krums Corners Road
-#         Ithaca, NY  14850
-#
-#     See accompanying LICENSE file for copyright and license information.
 #
 # Author:
 #     Shashi, MCCI   Dec 2022
