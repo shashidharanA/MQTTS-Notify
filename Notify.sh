@@ -1,4 +1,24 @@
 #!/bin/bash
+############################################################################
+# 
+# Module: gateway_status.sh
+#
+# Function:
+#     gateway status will send mail when the Message recived in related Mqqts Topic   
+#
+# Copyright and License:
+#     This file copyright (c) 2022 by
+#
+#         MCCI Corporation
+#         3520 Krums Corners Road
+#         Ithaca, NY  14850
+#
+#     See accompanying LICENSE file for copyright and license information.
+#
+# Author:
+#     Shashi, MCCI   Dec 2022
+#
+############################################################################*/
 
 while true; do
   mosquitto_sub -C 1 -h training.mcci.io -t test -p 8883 -u shashi -P shashi --capath /etc/ssl/certs/ > temp.txt
